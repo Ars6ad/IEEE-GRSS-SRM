@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEEE GRSS SRM Student Branch Chapter | Earth Observation & Space Technology</title>
+  <meta name="description" content="Official website of IEEE Geoscience and Remote Sensing Society (GRSS) SRM Student Branch Chapter. Empowering students in satellite remote sensing, AI, GIS, and space tech.">
+  
+  <!-- CSS Stylesheet & FontAwesome Icons -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Dynamic Star & Particle Orbit Background Canvas -->
+  <canvas id="space-canvas"></canvas>
+
+  <!-- Sticky Glassmorphism Header / Navigation Bar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="logo-brand">
+        <div class="logo-badge">GRSS</div>
+        <div class="logo-text">
+          <span class="logo-title">IEEE GRSS</span>
+          <span class="logo-subtitle">SRM STUDENT CHAPTER</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#events" class="nav-link">Activities & Events</a></li>
+          <li><a href="#contact" class="nav-link">Contact / Join Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark/Light Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Join Chapter</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Mobile Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO / HOME SECTION ==================== -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-chip">
+          <i class="fas fa-satellite"></i>
+          <span>IEEE Geoscience & Remote Sensing Society</span>
+        </div>
+        <h1 class="hero-title">
+          Monitoring Earth. <br>
+          <span class="gradient-text">Empowering Future</span> Space & Geoscience Leaders.
+        </h1>
+        <p class="hero-description">
+          Welcome to the <strong>IEEE GRSS SRM Student Branch Chapter</strong>. We bridge the gap between space technology, satellite remote sensing, AI, and GIS to address real-world environmental, spatial, and climate challenges.
+        </p>
+        <div class="hero-cta">
+          <a href="#events" class="btn btn-primary">
+            <span>Explore Activities</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Become a Member</span>
+          </a>
+        </div>
+
+        <!-- Live Statistics Counter -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="250">0</span>
+            <span class="stat-label">Active Members</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Events & Workshops</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-label">Geo-AI Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">Research Papers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="assets/hero_satellite.png" alt="Futuristic Earth Remote Sensing Satellite Orbiting Space">
+          <div class="hero-badge-overlay">
+            <div class="hero-badge-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="hero-badge-text">
+              <h4>Earth Observation Hub</h4>
+              <p>SRM Institute of Science & Technology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT US SECTION ==================== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fas fa-compass"></i> Who We Are</span>
+        <h2 class="section-title">About IEEE GRSS SRM</h2>
+        <p class="section-subtitle">
+          Inspiring students and researchers to utilize Earth observation data, spatial analytics, and satellite remote sensing for sustainable development.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card-glass">
+          <h3 class="gradient-text">Our Vision & Mission</h3>
+          <p>
+            The IEEE Geoscience and Remote Sensing Society (GRSS) is a global professional organization dedicated to advancing the science and technology of remote sensing of the Earth, oceans, atmosphere, and space.
+          </p>
+          <p>
+            At <strong>SRM IST Chapter</strong>, our mission is to cultivate a collaborative ecosystem where passionate students, coders, and researchers gain hands-on expertise in satellite image analysis, GIS mapping, AI models for Earth observation, and drone remote sensing.
+          </p>
+        </div>
+
+        <div class="about-features">
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-satellite-dish"></i></div>
+            <div class="feature-info">
+              <h4>Satellite Remote Sensing</h4>
+              <p>Processing Sentinel-2, Landsat, and MODIS satellite data stream for environmental monitoring.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-brain"></i></div>
+            <div class="feature-info">
+              <h4>AI & GIS Analytics</h4>
+              <p>Applying Computer Vision & Deep Learning to land-cover change, crop yield, and wildfire tracking.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="feature-info">
+              <h4>Hands-on Workshops</h4>
+              <p>Technical bootcamps in Python, QGIS, Google Earth Engine (GEE), and GDAL spatial tools.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-award"></i></div>
+            <div class="feature-info">
+              <h4>Hackathons & Research</h4>
+              <p>Participating in international IEEE challenges, hackathons, and publishing high-impact papers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACTIVITIES & EVENTS SECTION ==================== -->
+  <section id="events" class="events-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fas fa-calendar-alt"></i> Chapter Activities</span>
+        <h2 class="section-title">Flagship Events & Workshops</h2>
+        <p class="section-subtitle">
+          Explore our upcoming and recent events designed to upscale technical knowledge and collaborative research.
+        </p>
+
+        <!-- Category Filter Buttons -->
+        <div class="events-filter">
+          <button class="filter-btn active" data-filter="all">All Events</button>
+          <button class="filter-btn" data-filter="Hackathon">Hackathons</button>
+          <button class="filter-btn" data-filter="Workshop">Workshops</button>
+          <button class="filter-btn" data-filter="Webinar">Webinars</button>
+          <button class="filter-btn" data-filter="Field Event">Field Demos</button>
+        </div>
+      </div>
+
+      <div class="events-grid">
+        <!-- Event Card 1 -->
+        <div class="event-card" data-category="Hackathon">
+          <div class="event-image-box">
+            <img src="assets/geohack.png" alt="GeoHack 2025 AI Earth Observation Event">
+            <span class="event-category-badge">Hackathon</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <span><i class="far fa-calendar"></i> Mar 24-25, 2025</span>
+              <span><i class="fas fa-map-marker-alt"></i> Hybrid / SRM</span>
+            </div>
+            <h3 class="event-title">GeoHack 2025: AI for Earth Observation</h3>
+            <p class="event-snippet">
+              24-hour national hackathon focused on solving climate tech and disaster response challenges using satellite imagery and deep learning models.
+            </p>
+            <div class="event-card-footer">
+              <div class="event-speaker">
+                <i class="fas fa-user-circle"></i>
+                <span>Dr. K. Sivan & Mentors</span>
+              </div>
+              <button class="btn btn-primary btn-sm open-event-modal" data-event-id="1">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="event-card" data-category="Workshop">
+          <div class="event-image-box">
+            <img src="assets/gis_workshop.png" alt="Satellite Remote Sensing & GIS Workshop">
+            <span class="event-category-badge">Workshop</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <span><i class="far fa-calendar"></i> Apr 10, 2025</span>
+              <span><i class="fas fa-map-marker-alt"></i> Lab 3, SRM IST</span>
+            </div>
+            <h3 class="event-title">Satellite Remote Sensing & GIS Bootcamp</h3>
+            <p class="event-snippet">
+              Hands-on practical training covering Python QGIS scripting, multispectral vegetation index calculation, and Google Earth Engine.
+            </p>
+            <div class="event-card-footer">
+              <div class="event-speaker">
+                <i class="fas fa-user-circle"></i>
+                <span>IEEE GRSS Lead Fellow</span>
+              </div>
+              <button class="btn btn-primary btn-sm open-event-modal" data-event-id="2">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 3 -->
+        <div class="event-card" data-category="Webinar">
+          <div class="event-image-box">
+            <img src="assets/hero_satellite.png" alt="Space-Borne Earth Monitoring Webinar">
+            <span class="event-category-badge">Webinar</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <span><i class="far fa-calendar"></i> May 05, 2025</span>
+              <span><i class="fas fa-video"></i> Zoom / Virtual</span>
+            </div>
+            <h3 class="event-title">Space-Borne Remote Sensing Symposium</h3>
+            <p class="event-snippet">
+              Keynote talk on next-generation Synthetic Aperture Radar (SAR) space missions and soil moisture remote sensing applications.
+            </p>
+            <div class="event-card-footer">
+              <div class="event-speaker">
+                <i class="fas fa-user-circle"></i>
+                <span>NASA-JPL Scientist</span>
+              </div>
+              <button class="btn btn-primary btn-sm open-event-modal" data-event-id="3">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Card 4 -->
+        <div class="event-card" data-category="Field Event">
+          <div class="event-image-box">
+            <img src="assets/drone_sensing.png" alt="Drone Sensing & Field Data Acquisition">
+            <span class="event-category-badge">Field Event</span>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <span><i class="far fa-calendar"></i> Jun 12, 2025</span>
+              <span><i class="fas fa-map-marker-alt"></i> SRM Grounds</span>
+            </div>
+            <h3 class="event-title">Drone Sensing & Field Acquisition Demo</h3>
+            <p class="event-snippet">
+              Live field demonstration of thermal multispectral drone mapping, LIDAR terrain survey, and ground validation data collection.
+            </p>
+            <div class="event-card-footer">
+              <div class="event-speaker">
+                <i class="fas fa-user-circle"></i>
+                <span>UAS Lab Specialists</span>
+              </div>
+              <button class="btn btn-primary btn-sm open-event-modal" data-event-id="4">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT / JOIN US SECTION ==================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Details Card -->
+        <div class="contact-info-card">
+          <div>
+            <span class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+            <h3 class="gradient-text">Connect With Us</h3>
+            <p>Have questions about IEEE GRSS membership, events, or student research opportunities? Reach out to our team!</p>
+
+            <div class="info-item-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="info-details">
+                  <h5>Location</h5>
+                  <p>SRM Institute of Science and Technology, Kattankulathur, Tamil Nadu - 603203</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                <div class="info-details">
+                  <h5>Email Us</h5>
+                  <p>ieeegrss@srmist.edu.in</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fas fa-users"></i></div>
+                <div class="info-details">
+                  <h5>Affiliation</h5>
+                  <p>IEEE Madras Section & IEEE GRSS Global</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-box">
+            <h5>Follow IEEE GRSS SRM</h5>
+            <div class="social-icons">
+              <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Join Chapter / Contact Form -->
+        <div class="form-card">
+          <h3>Join IEEE GRSS SRM</h3>
+          <p>Fill out the application form below to express your interest in joining our student branch chapter domain teams.</p>
+
+          <form id="join-contact-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="form-name">Full Name *</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Johnson">
+                <span class="form-error">Full name is required</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email">SRM / Personal Email *</label>
+                <input type="email" id="form-email" class="form-input" placeholder="alex@srmist.edu.in">
+                <span class="form-error">Valid email is required</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-dept">Register Number / Dept</label>
+                <input type="text" id="form-dept" class="form-input" placeholder="e.g. RA2311003010001 (CSE)">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-domain">Domain Interest *</label>
+                <select id="form-domain" class="form-select">
+                  <option value="">Select Domain</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="AI & Remote Sensing">AI & Remote Sensing</option>
+                  <option value="GIS & Satellite Analytics">GIS & Satellite Analytics</option>
+                  <option value="Hardware & Drones">Hardware & Drones</option>
+                  <option value="Event Management & PR">Event Management & PR</option>
+                </select>
+                <span class="form-error">Please select a domain</span>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="form-message">Why do you want to join IEEE GRSS?</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Tell us briefly about your interest in space tech, coding, or remote sensing..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
+              <span>Submit Application</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-brand">
+            <div class="logo-badge">GRSS</div>
+            <div class="logo-text">
+              <span class="logo-title">IEEE GRSS</span>
+              <span class="logo-subtitle">SRM STUDENT CHAPTER</span>
+            </div>
+          </div>
+          <p>
+            Advancing the science and technology of Earth observation, satellite remote sensing, and GIS applications at SRM Institute of Science and Technology.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Activities & Events</a></li>
+            <li><a href="#contact">Join Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Domains</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Web Development</a></li>
+            <li><a href="#contact">AI & Machine Learning</a></li>
+            <li><a href="#contact">Satellite Image Processing</a></li>
+            <li><a href="#contact">UAS & Drones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">IEEE Resources</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.grss-ieee.org/" target="_blank">IEEE GRSS Global</a></li>
+            <li><a href="https://www.ieee.org/" target="_blank">IEEE Main Portal</a></li>
+            <li><a href="https://www.srmist.edu.in/" target="_blank">SRMIST Official</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 IEEE GRSS SRM Student Branch Chapter. All Rights Reserved.</p>
+        <p>Built with <i class="fas fa-heart" style="color: #ef4444;"></i> for Web Development Selection Task.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== EVENT DETAILS MODAL ==================== -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img id="modal-img" src="" alt="Event Detail Banner">
+        <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title gradient-text" id="modal-title">Event Title</h3>
+        
+        <div class="modal-details-grid">
+          <div class="modal-detail-item">
+            <i class="far fa-calendar-alt"></i>
+            <span id="modal-date">Date</span>
+          </div>
+          <div class="modal-detail-item">
+            <i class="far fa-clock"></i>
+            <span id="modal-time">Time</span>
+          </div>
+          <div class="modal-detail-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="modal-location">Location</span>
+          </div>
+          <div class="modal-detail-item">
+            <i class="fas fa-user-tie"></i>
+            <span id="modal-speaker">Speaker</span>
+          </div>
+        </div>
+
+        <p class="modal-description" id="modal-desc">
+          Event detailed description text goes here...
+        </p>
+
+        <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center;" onclick="document.getElementById('modal-close').click();">
+          <span>Register Now / Submit Query</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
