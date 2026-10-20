@@ -1,10 +1,10 @@
-# 🌌 IEEE GRSS SRM - Official Chapter Website
+#  IEEE GRSS SRM - Official Chapter Website
 
 A modern, responsive, high-performance one-page website created for the **IEEE Geoscience and Remote Sensing Society (GRSS) SRM Student Branch Chapter**.
 
 ---
 
-## 📌 Features
+##  Features
 
 - **Hero Section**: Satellite Earth observation theme with animated particle background canvas, live statistics counter (250+ Members, 15+ Events), and quick CTA links.
 - **About Us**: Comprehensive overview of IEEE GRSS, SRM Chapter mission, vision, and core technical pillars (Remote Sensing, AI & GIS, Space Systems).
@@ -20,7 +20,7 @@ A modern, responsive, high-performance one-page website created for the **IEEE G
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Markup & Layout**: HTML5 (Semantic Structure)
 - **Styling**: Modern CSS3 (Glassmorphism, HSL Design Tokens, CSS Grid, Flexbox, Animations)
@@ -29,7 +29,7 @@ A modern, responsive, high-performance one-page website created for the **IEEE G
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 IEEE GRSS SRM/
@@ -46,7 +46,7 @@ IEEE GRSS SRM/
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 1. **Clone the repository**:
    ```bash
@@ -63,7 +63,7 @@ IEEE GRSS SRM/
 
 ---
 
-## 🌐 Deploy to GitHub Pages
+##  Deploy to GitHub Pages
 
 1. Push code to your GitHub repository:
    ```bash
@@ -80,7 +80,7 @@ IEEE GRSS SRM/
 
 ---
 
-## 📝 Submission Checklist
+##  Submission Checklist
 
 - [x] **Home Section with Intro & Live Stats**
 - [x] **About Us Section**
